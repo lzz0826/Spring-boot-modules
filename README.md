@@ -33,7 +33,7 @@ spring boot modules test
 專案如何打包:
 選中父工程-->右鍵-->Run As-->Maven Install,操作完成後會在各個子工程target資料夾中生成一個指定名稱的jar包,將這些jar包一個個拿出來解壓,會發現在同樣的BOOT-INF/lib目錄下,每個jar包中的東西不一樣,model子工程的jar包只包含父工程中Maven依賴的包,dao中多了一個model子工程依賴包,service子工程多了model和dao兩個依賴包,web工程則包含了所有的jar包.我們最終部署執行的就是web工程target目錄下的可執行jar包。
 
-http://localhost:8080/app/hello.json
+app/hello.json
 
 
   
